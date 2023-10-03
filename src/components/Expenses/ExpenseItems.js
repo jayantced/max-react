@@ -9,6 +9,7 @@ function ExpenseItems(props) {
   //   // console.log(myTitle);
   // }
     return (
+      <li>
       <div className="expense-item">
         <ExpenseDate date={props.date}/>
         <div className="expense-item__description">
@@ -16,6 +17,7 @@ function ExpenseItems(props) {
           <div className="expense-item__price">${props.amount}</div>
         </div>
       </div>
+      </li>
     );
 }
 
